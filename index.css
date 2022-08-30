@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Proza+Libre:wght@700&display=swap");
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    height: 100%;
+    
+}
+
+h2 {
+    font-family: "Proza Libre", sans-serif;
+    margin: 0;
+    
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 16px;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 2px;
+}
+
+.nav-items {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    align-items: center;
+    margin: 0;
+    margin-left: auto;
+}
+
+.nav-item {
+    margin: 8px;
+}
+
+.about-me-image {
+    border-radius: 15px;
+    flex-shrink: 0;
+    margin-top: 10px;
+    width: 40%;
+}
+
+.about-me-container {
+    display: flex;
+}
+
+.about-me-text-container {
+    margin-top: 20px;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.project {
+    list-style-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/right-arrow.svg);
+}
+
+.skills {
+    margin-top: 20px;
+}
+
+.contact {
+    margin-top: 20px;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.contact p {
+    text-align: left;
+    padding: 10px;
+} 
+
+footer {
+    margin-top: auto;
+    padding: 12px;
+    text-align: center;
+}
+
+
+
+/* Style for Game */
+
+
+
+.game {
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 25px;
+}
+#character {
+    width: 20px;
+    height: 50px;
+    background-color: red;
+    position:relative;
+    top: 150px;
+}
+.animate {
+    animation: jump 0.3s linear;
+}
+@keyframes jump {
+    0%{top: 150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 150px;}
+}
+
+#block {
+    background-color: blue;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 130px;
+    left: 500px;
+    animation: block 1s infinite linear;
+}
+@keyframes block {
+    0%{left: 500px}
+    100%{left: -20px}
+}
+p {
+    text-align: center;
+}
